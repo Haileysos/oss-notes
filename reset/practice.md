@@ -30,7 +30,7 @@
 <br><br><br>
 
 ### 목표 2 : staging area 에서 빼기 `reset --mixed`  
-📍 위 사진과 같은 상황에서, **git reset c1의 hash** 후, **commit history**  확인  
+📍 목표 1 이후 >> **git reset c1의 hash** 후, **commit history**  확인  
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/ebbc8c7d-6366-42fc-ba4c-a96e16f969ab" /><br>
 🩵 결과 : 이미 HEAD 라서 commit history 는 변화가 없음!!
 <br>    
@@ -50,4 +50,21 @@
 🩵 resetB.txt
 - working directory에 있지만 git이 한 번도 관리하지 않은 파일
 - 새로생김, add X
+<br><br><br>
+
+### 목표 3 : 특정 파일만 reset 하기 (= 특정 파일만 working directory로 옮기기) `reset 파일명`  
+📍 목표 1 이후 >> **git reset 파일명** 후, 파일 상태 확인  
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/db50e7d1-7cbd-42a7-bd76-328d7d1a3c43" /><br>
+🩵 결과 : resetA.txt 파일만 working derictory로 옮겨짐!!  
+<br>  
+
+📍 resetB.txt commit 후, resetA.txt commit  
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/69ee062f-436d-437a-83d8-f9a5c88afe16" /><br>
+🩵 결과 : resetB.txt 는 staging area 에 있었기 때문에 바로 commit 해줬고,  
+    resetA.txt 는 working directory 에 있었기 때문에 add(staging) 하고 commit 해줌!!  
+<br>
+
+☑️ 상태확인
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/609e5822-bd28-4400-ba67-d23a5f703c8c" /><br>
+🩵 결과 : commit 한 순서대로 차곡 차곡 쌓여있음 !!
 <br><br><br>
