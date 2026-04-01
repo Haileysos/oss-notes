@@ -5,14 +5,14 @@
 | Widget    | Description                                    | |
 | ---------- | ---------------------------------------------- | --|
 | <img width="50%" alt="image" src="https://github.com/user-attachments/assets/4e0cffa3-c849-4c02-a7b2-e878b08c7590" /> | resetA.txt 파일생성   | working directory                 |
-|                                                                                                                       | git add resetA.txt    | working directory -> staging area |
-|                                                                                                                       | git commit -m "c1"    | repository                        |
+|                                                                                                                       | git add resetA.txt    | working directory → staging area  |
+|                                                                                                                       | git commit -m "c1"    | staging area → repository         |
 | <img width="50%" alt="image" src="https://github.com/user-attachments/assets/c3834bd5-886c-4aeb-970f-fb919cdb920d" /> | resetB.txt 파일생성   | working directory                 |
-|                                                                                                                       | git add resetB.txt    | working directory -> staging area |
-|                                                                                                                       | git commit -m "c2"    | repository                        |
+|                                                                                                                       | git add resetB.txt    | working directory → staging area  |
+|                                                                                                                       | git commit -m "c2"    | staging area → repository         |
 | <img width="50%" alt="image" src="https://github.com/user-attachments/assets/1408b7bc-ee11-4c8c-ac72-c2b9c85c7139" /> | resetA 파일 내용 수정 | working directory                 | 
-|                                                                                                                       | git add resetA.txt    | working directory -> staging area |
-|                                                                                                                       | git commit -m "c3"    | repository                        |   
+|                                                                                                                       | git add resetA.txt    | working directory → staging area  |
+|                                                                                                                       | git commit -m "c3"    | staging area → repository         |   
 
 **commit history**  
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/76afe9a0-cb66-423c-a874-a1a0424113b6" /><br>  
