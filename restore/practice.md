@@ -15,13 +15,27 @@
 <br>  
 <br><br>
 
-### 목표 1 : `reset --mixed` `restore 파일명`
-📍 **git reset c1의 hash** 후, **commit history**, **파일상태**    
-<br><img width="1316" height="390" alt="image" src="https://github.com/user-attachments/assets/49c82e7c-b9a3-403d-94ba-22a0c8113a2c" /><br>
-🩵 결과 : 파일이 add되지 않은 상태로 working directory 에 있음,  c2 가 commit history 에서 지워짐 !!  
+### 📍 목표 1 : `reset --mixed` `restore 파일명`
+**git reset c1의 hash** 후, **commit history**, **파일상태**    
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/49c82e7c-b9a3-403d-94ba-22a0c8113a2c" /><br>
+🩵 결과 :
+|            | working directory      | staging area      | commit (HEAD) |
+|------------|------------------------|-------------------|---------------|
+|BEFORE reset| a + b                  | 없음              | c2            |
+|AFTER reset | 그대로 c2 상태 (a + b) | c1 상태 (a만 있음) | c1            |  
+staging area 에 있는 애는 수정되기 전 파일 (a내용만 있는)  
+working directory 에 있는 애는 수정된 파일 (a, b 내용이 있는)
+
 <br>  
 
-📍 **git restore 파일명** 후,@@@@@@@@@@@@@@@@@@@@@
-<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/5fa9506a-281b-4f93-9175-2cdb599086e0" /><br>
-🩵 결과 : 파일들이 add된 상태로(tracked) staging area에 있음 !!
+**git restore 파일명** 후, **commit history**, **파일상태**     
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/b6a49d21-1c04-410a-8e37-5f539e583187" /><br>
+🩵 결과 : working directory를 staging 상태로 맞춰버림 →  test.txt 파일에 a 가 적혀 있음 !! 
+|             | working directory | staging area | commit (HEAD) |
+|-------------|-------------------|--------------|---------------|
+|AFTER restore| a                 | a            | c1            |  
+
 <br><br><br>
+
+
+
