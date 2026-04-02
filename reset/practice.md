@@ -75,3 +75,11 @@ resetB.txt commit 후, resetA.txt commit
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/609e5822-bd28-4400-ba67-d23a5f703c8c" /><br>
 🩵 결과 : commit 한 순서대로 차곡 차곡 쌓여있음 !!
 <br><br><br>
+
+### 📍 목표 5 : `reset 되돌리기`  
+**git reset c1의 hash** 후, **commit 상태, 파일 상태**  확인   
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/31d38992-024f-4a1b-8ec2-efd10dc3704d" /><br>
+**git reset c3의 hash** 후, **commit 상태, 파일 상태**  확인   
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/2039b06d-8622-44b5-aa80-7fa73326ec4c" /><br>
+🩵 결과 : reset 되었던 것들이 다시 다 돌아옴 !!
+<br><br><br>
