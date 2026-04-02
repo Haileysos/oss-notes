@@ -18,8 +18,8 @@
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/76afe9a0-cb66-423c-a874-a1a0424113b6" /><br>  
 <br><br>
 
-### 목표 1 : c1으로 돌아가기 `reset --soft`
-📍 **git reset --soft c1의 hash** 후, **commit history**  확인  
+### 📍 목표 1 : c1으로 돌아가기 `reset --soft`
+**git reset --soft c1의 hash** 후, **commit history**  확인  
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/34bd20b4-3e91-4823-a4bf-7196813898d6" /><br>
 🩵 결과 : c2, c3 가 commit history 에서 지워짐 !!
 <br>  
@@ -29,8 +29,8 @@
 🩵 결과 : 파일들이 add된 상태로(tracked) staging area에 있음 !!
 <br><br><br>
 
-### 목표 2 : staging area 에서 빼기 `reset --mixed`  
-📍 목표 1 이후 >> **git reset c1의 hash** 후, **commit history**  확인  
+### 📍 목표 2 : staging area 에서 빼기 `reset --mixed`  
+목표 1 이후 >> **git reset c1의 hash** 후, **commit history**  확인  
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/ebbc8c7d-6366-42fc-ba4c-a96e16f969ab" /><br>
 🩵 결과 : 이미 HEAD 라서 commit history 는 변화가 없음!!
 <br>    
@@ -52,13 +52,20 @@
 - 새로생김, add X
 <br><br><br>
 
-### 목표 3 : 특정 파일만 reset 하기 (= 특정 파일만 working directory로 옮기기) `reset 파일명`  
-📍 목표 1 이후 >> **git reset 파일명** 후, 파일 상태 확인  
+### 📍 목표 3 : `reset --hard`  
+목표 1 이후 >> **git reset -hard c1의 hash** 후, **commit 상태, 파일 상태**  확인   
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/31f6d1a6-031b-4935-a95d-f59aac055637" /><br>
+🩵 결과 : 추가된(add 하고 commit 까지 했었던) resetB.txt 파일은 없어지고, resetA.txt 파일은 수정하기 전으로 돌아감  
+　　　　→ 히스토리에도 아무것도 없음 그래서 좀 위험함 !!  
+<br><br><br>
+
+### 📍 목표 4 : 특정 파일만 reset 하기 (= 특정 파일만 working directory로 옮기기) `reset 파일명`  
+목표 1 이후 >> **git reset 파일명** 후, 파일 상태 확인  
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/db50e7d1-7cbd-42a7-bd76-328d7d1a3c43" /><br>
 🩵 결과 : resetA.txt 파일만 working derictory로 옮겨짐!!  
 <br>  
 
-📍 resetB.txt commit 후, resetA.txt commit  
+resetB.txt commit 후, resetA.txt commit  
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/69ee062f-436d-437a-83d8-f9a5c88afe16" /><br>
 🩵 결과 : resetB.txt 는 staging area 에 있었기 때문에 바로 commit 해줬고,  
     resetA.txt 는 working directory 에 있었기 때문에 add(staging) 하고 commit 해줌!!  
