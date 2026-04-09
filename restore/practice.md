@@ -39,3 +39,21 @@
 | AFTER restore | a                 | a            | c1            |  
 
 <br><br><br>
+
+### 📍 목표 2 : `reset --soft` + `restore --staged` + `restore`
+**git reset --soft c1.hash** 후, **commit history**, **파일상태**    
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/61db5f08-cb3a-45ee-9f87-112bab23955e" />
+<br>
+**git restore --staged &lt;fileName&gt;** 후, **commit history**, **파일상태**    
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/7495efc7-3cb0-493b-b928-2eec570ad3bc" /><br>
+**git restore &lt;fileName&gt;** 후, **commit history**, **파일상태**    
+<br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/036df60c-933a-4f5c-9c03-c58e8e381185" /><br>
+|                                          | working directory | staging area | repository |
+|------------------------------------------|-------------------|--------------|------------|
+| git reset --soft c1.hash 후              | a<br><br>b        | a<br><br>b   | a          |  
+| git restore --staged &lt;fileName&gt; 후 | a<br><br>b        | a            | a          |  
+| git restore &lt;fileName&gt; 후          | a                 | a            | a          |   
+
+세 영역이 모두 동일한 내용으로 덮어씌워지기 되어서 다 똑같아짐  
+
+<br><br><br>
