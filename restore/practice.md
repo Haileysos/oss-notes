@@ -16,9 +16,11 @@
 <br><br>
 
 ### 📍 목표 1 : `reset --mixed` + `restore 파일명`
-**git reset c1의 hash** 후, **commit history**, **파일상태**    
+**git reset c1.hash** 후, **commit history**, **파일상태**    
 <br><img width="60%" alt="image" src="https://github.com/user-attachments/assets/49c82e7c-b9a3-403d-94ba-22a0c8113a2c" /><br>
-🩵 결과 :
+빨간색으로 modified:   test.txt.   
+→ 현재 working directory에 test.txt가 있는건데, staging area에 있는 내용이랑 달라서 빨간색으로 보여줌   
+
 |              | working directory      | staging area      | commit (HEAD) |
 |--------------|------------------------|-------------------|---------------|
 | BEFORE reset | a + b                  | 없음              | c2            |
