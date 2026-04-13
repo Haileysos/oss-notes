@@ -1,4 +1,5 @@
 # reset  
+내가 reset하고자 하는 commit으로 돌아가는 것!!  
 
 C4 (HEAD)일 때      git rest (--mixed) C2hash 를 하면      C2(HEAD)  
 C3                                C1  
