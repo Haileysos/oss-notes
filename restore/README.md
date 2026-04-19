@@ -6,7 +6,6 @@
 1: git restore &lt;fileName&gt;        : staging are에 있는 파일을 working directory로 복사  
 2: gir restore --staged &lt;fileName&gt; : repository에 았는 파일을 staging area로 복사  
 3: git restore --source = 특정시점해쉬코드 or 브랜치명<fileName> : 리포지토리 파일을 즉시 워킹 디렛토리로 복사  
-4: git restore --continue : revert 했는데 충돌이 발생하면, 알아서 해결하고 그 후에 revert를 마저 끝내겠다. 라는 의미로 사용
 
 reset (--mixed) 혹은 reset --soft 를 한 후에는 수정된 파일이 reset 이전으로 돌아가진 않음  
 하지만 git restore 파일명 으로 파일 내용을 reset 이전으로 되돌릴수있음.  
